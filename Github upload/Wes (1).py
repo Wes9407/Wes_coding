@@ -1,5 +1,3 @@
-#print('hello')
-
 import csv
 Avarages =[];
 Firstnames=[];
@@ -12,7 +10,7 @@ with open('input.csv') as csv_file:
         Firstnames.append(row[0])
         Surname.append(row[1])
         print(row[4])
-        if count>0:
+        if count<11:
             Sum=0; #Initital sum at each row
             for marks in range(2,5):
                 Sum = int(row[marks])+Sum;
